@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+   box-sizing: border-box;
+   font-family: 'Exo 2', sans-serif;
+   font-size: 1rem;
+}
+
+
+@layer components {
+   .transition-link {
+      @apply transition-all duration-300 border-b border-b-transparent hover:border-b-black;
+   }
+
+   .for-ad {
+      @apply flex flex-col items-end;
+   }
+
+   .text-adaptive {
+      @apply absolute top-0 block w-full;
+   }
+
+   .img {
+      @apply my-0 mx-auto;
+   }
+
+   .title {
+      @apply text-3xl hero lg:text-4xl font-bold;
+   }
+
+   .con-responsive {
+      @apply mx-auto max-w-screen-lg px-4 pt-20 xl:pt-32;
+   }
+
+   .ul-list {
+      @apply flex flex-col gap-8 relative;
+   }
+
+   .hero-main {
+      @apply relative mb-24 border-b-2;
+   }
+
+   .card {
+      @apply flex flex-col justify-start py-7 px-8 bg-gray-100 rounded-md border border-gray-300 gap-3;
+      width: 100%;
+   }
+
+   .bgc {
+      /* height: 520px; */
+      /* overflow: hidden; */
+      margin: 0 auto;
+      max-width: calc(100% + 500px);
+   }
+
+   .form-con {
+      @apply mx-auto max-w-screen-lg px-4 pt-5 flex gap-4 justify-center;
+   }
+
+   .double-con {
+      @apply absolute block w-full top-0;
+   }
+
+   .form-main-con {
+      @apply border-t-2 relative mb-24 overflow-hidden border-b-2;
+   }
+}
+
+.burger {
+   width: 35px;
+   height: 32px;
+   position: relative;
+}
+
+.burger :first-child {
+   border-radius: 19px;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   height: 4px;
+   background-color: #000;
+   transition: .3s;
+}
+
+.burger :nth-child(2) {
+   border-radius: 19px;
+   width: 100%;
+   position: absolute;
+   top: 45%;
+   height: 4px;
+   background-color: #000;
+   transition: .3s;
+}
+
+.burger :last-child {
+   border-radius: 19px;
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   height: 4px;
+   background-color: #000;
+   transition: .3s;
+}
+
+.active :nth-child(2) {
+   transition: .3s;
+   opacity: 0;
+}
+
+.active :first-child {
+
+   top: 13px;
+   transform: rotate(-45deg);
+}
+
+.active :last-child {
+   top: 13px;
+   transform: rotate(45deg);
+}
+
+.visible {
+   opacity: 100%;
+   visibility: visible;
+}
+
+.hero {
+   max-width: 790px;
+}
+
+.img-responsive {
+   display: none;
+}
+
+.circle-question {
+   @apply transition-colors bg-green-700 text-white flex items-center flex-col text-2xl font-bold rounded-full justify-center px-9 leading-5 pt-3 relative text-center hover:bg-green-800;
+   top: -216px;
+   width: 174px;
+   height: 174px;
+   left: 612px;
+   bottom: 78px;
+   cursor: pointer;
+}
+
+.form-input {
+   border-radius: 5px;
+   border: 1px solid rgb(209, 209, 209);
+   padding: 1.5rem 2rem 2rem 2rem;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   /* align-items: center; */
+   width: 40%;
+   background: #fff;
+   /* text-align: center; */
+}
+
+/* FORM */
+
+.form {
+   border-radius: 5px;
+   border: 1px solid rgb(209, 209, 209);
+   padding: 1.5rem;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 28%;
+   background: #fff;
+   text-align: center;
+   padding-bottom: 3rem;
+}
+
+.item::before {
+   top: 10px;
+   content: '';
+   width: 7px;
+   height: 7px;
+   border-radius: 50%;
+   background: #000;
+   position: absolute;
+   left: -20px;
+}
+
+.salad::before {
+   background: #B5D350;
+}
+
+.orange::before {
+   background: #F8A328;
+}
+
+.gray::before {
+   background: #A1A2A3;
+}
+
+.red::before {
+   background: #ff1b1b;
+}
+
+
+.map {
+   height: calc(100% - 48%);
+   width: calc(100% - 48%);
+}
+
+.map-desc {
+   width: calc(100% - 50%);
+}
+
+.bs-x {
+   box-shadow: 0px 10px 10px #c9c9c95c;
+}
+
+.for-r input[type="radio"] {
+   position: absolute;
+   opacity: 2%;
+   z-index: 10;
+   width: 20px;
+   height: 20px;
+}
+
+.for-r input[type="radio"]+label {
+   position: relative;
+   cursor: pointer;
+   padding: 0 0 0 35px;
+}
+
+.for-r input[type="radio"]+label:before {
+   content: '';
+   position: absolute;
+   top: 2px;
+   left: 0;
+   width: 18px;
+   height: 18px;
+   border: 1px solid #CDD1DA;
+   border-radius: 50%;
+   background: #FFF;
+   box-shadow: 0px 1px 2px #d7d7d7;
+}
+
+.for-r input[type="radio"]+label:after {
+   content: '';
+   position: absolute;
+   top: 9px;
+   left: 12px;
+   width: 0px;
+   height: 0px;
+   border-radius: 50%;
+   background: green;
+   opacity: 0;
+   transition: .2s;
+}
+
+.for-r input[type="radio"]:checked+label:after {
+   opacity: 1;
+   top: 6px;
+   left: 4px;
+   width: 10px;
+   height: 10px;
+}
+
+@media screen and (max-width: 1130px) {
+   .for-ad {
+      display: none;
+   }
+
+   .form-con {
+      padding-top: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .form {
+      justify-self: center;
+      width: 290px;
+   }
+
+   .bgc {
+      display: none;
+   }
+
+   .form-input {
+      margin-top: 25px;
+      justify-self: center;
+      grid-column: 1/3;
+      width: 400px;
+   }
+
+   .double-con {
+      position: relative;
+   }
+
+   .form-main-con {
+      border: none;
+   }
+}
+
+@media screen and (max-width: 890px) {
+   .text-adaptive {
+      position: relative;
+      text-align: center;
+   }
+
+   .img {
+      display: none;
+   }
+
+   .img-responsive {
+      display: block;
+   }
+
+   .title {
+      padding-bottom: 2rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
+   }
+
+   .con-responsive {
+      padding-top: 2rem;
+   }
+
+   .ul-list {
+      align-items: center;
+   }
+
+   .circle-question {
+      position: inherit;
+      margin: 0 auto;
+      margin-top: 1.5rem;
+   }
+
+   .hero-main {
+      border: none;
+      margin-bottom: 5rem;
+   }
+
+   .form:last-child {
+      font-size: 25px;
+   }
+}
+
+@media screen and (max-width: 790px) {
+   .form-con {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .form {
+      width: 370px;
+   }
+
+   .form-input {
+      width: 370px;
+   }
+
+}
+
+@media screen and (max-width: 1024px) {
+   .map {
+      width: 80%;
+      height: 80%;
+   }
+}
