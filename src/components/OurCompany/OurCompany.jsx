@@ -1,8 +1,8 @@
 const OurCompany = () => {
    
    return (
-      <div className="pb-12 mx-auto max-w-screen-lg px-4 md:pb-24">
-         <h2 className='mb-9 text-center font-bold text-4xl md:mb-12'>Наша команда это: </h2>
+      <div className="pb-12 mx-auto max-w-screen-lg px-4 md:pb-24" id="hero">
+         <h2 className='mb-9 text-center font-bold text-2xl sm:text-4xl md:mb-12'>Наша команда это: </h2>
          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 grid-rows-2 mb-8">
             {/* Cards */}
             <div className='card'>

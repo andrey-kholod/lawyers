@@ -1,13 +1,12 @@
 const Contacts = () => {
    return (
-      <div className='w-full overflow-hidden px-3'>
+      <div className='w-full overflow-hidden px-3' id="contacts">
          <div className='pb-12 mx-auto max-w-screen-lg lg:pb-28 relative px-3'>
             <img className='absolute bottom-0 -left-96' src="/bgc-1.png" alt="" />
-            {/* <img className='absolute bottom-0 -right-96' src="/bgc-1.png" alt="" /> */}
             <img className='absolute bottom-0 -right-96' src="/bgc-2.png" alt="" />
             <div className="flex-col items-center flex justify-between relative lg:flex-row">
                <div className='items-center flex flex-col lg:items-start gap-6'>
-                  <h4 className='font-bold text-4xl'>Контакты</h4>
+                  <h4 className='font-bold text-2xl sm:text-4xl'>Контакты</h4>
                   <div>
                      <p className='text-lg mb-2'>Телефоны:</p>
                      <div className='flex gap-3 items-center mb-2'>
@@ -16,7 +15,7 @@ const Contacts = () => {
                            <path d="M14.375 9.375H15.625C15.6235 8.04937 15.0962 6.77847 14.1589 5.84111C13.2215 4.90375 11.9506 4.37649 10.625 4.375V5.625C11.6193 5.62599 12.5725 6.0214 13.2756 6.72445C13.9786 7.42749 14.374 8.38074 14.375 9.375Z" fill="#1E8E31" />
                            <path d="M17.5 9.375H18.75C18.7475 7.22088 17.8907 5.15569 16.3675 3.6325C14.8443 2.1093 12.7791 1.25248 10.625 1.25V2.5C12.4477 2.50215 14.1951 3.22717 15.484 4.51602C16.7728 5.80486 17.4978 7.5523 17.5 9.375Z" fill="#1E8E31" />
                         </svg>
-                        <p className='font-bold text-3xl'>+7 (495) 639-15-63</p>
+                        <p className='font-bold text-xl md:text-3xl'>+7 (495) 639-15-63</p>
                      </div>
                      <div className='flex gap-3 items-center'>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
@@ -24,10 +23,10 @@ const Contacts = () => {
                            <path d="M14.375 9.375H15.625C15.6235 8.04937 15.0962 6.77847 14.1589 5.84111C13.2215 4.90375 11.9506 4.37649 10.625 4.375V5.625C11.6193 5.62599 12.5725 6.0214 13.2756 6.72445C13.9786 7.42749 14.374 8.38074 14.375 9.375Z" fill="#1E8E31" />
                            <path d="M17.5 9.375H18.75C18.7475 7.22088 17.8907 5.15569 16.3675 3.6325C14.8443 2.1093 12.7791 1.25248 10.625 1.25V2.5C12.4477 2.50215 14.1951 3.22717 15.484 4.51602C16.7728 5.80486 17.4978 7.5523 17.5 9.375Z" fill="#1E8E31" />
                         </svg>
-                        <p className='font-bold text-3xl'>+7 (925) 838-47-97</p>
+                        <p className='font-bold text-xl md:text-3xl'>+7 (925) 838-47-97</p>
                      </div>
                   </div>
-                  <div className='w-96'>
+                  <div className='max-w-96'>
                      <p className='text-lg'>Адрес:</p>
                      <p className='text-lg leading-6'><span className='text-lg leading-6 font-bold'>г. Москва, ул. Милашенкова, д. 10, оф. 96</span> вход со стороны улицы, коричневое крыльцо с вывеской “Юридическая консультация”</p>
                   </div>

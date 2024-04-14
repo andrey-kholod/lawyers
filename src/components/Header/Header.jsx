@@ -38,12 +38,12 @@ const Header = () => {
          </nav>
          <div className={`${isBurger ? 'visible' : 'opacity-0 invisible'}  transition-all duration-300 absolute top-20 w-full bg-white flex flex-col z-20 items-center py-4 border-b-2 bs-x`}>
             <Link onClick={() => setIsBurger(false)} to='/' className='transition-colors ease-in-out duration-200 py-3 hover:bg-slate-200 w-full text-center'>Главная</Link>
-            <div className='transition-colors ease-in-out duration-200 py-3 hover:bg-slate-200 w-full text-center'>Наша команда</div>
-            <div className='transition-colors ease-in-out duration-200 py-3 hover:bg-slate-200 w-full text-center'>Контакты</div>
-            <div className='transition-colors ease-in-out duration-200 py-3 hover:bg-slate-200 w-full text-center flex flex-col items-center'>
+            <a href="#hero" className='cursor-pointer transition-colors ease-in-out duration-200 py-3 hover:bg-slate-200 w-full text-center'>Наша команда</a>
+            <a href='#contacts' className='cursor-pointer transition-colors ease-in-out duration-200 py-3 hover:bg-slate-200 w-full text-center'>Контакты</a>
+            <a className='cursor-pointer transition-colors ease-in-out duration-200 py-3 hover:bg-slate-200 w-full text-center flex flex-col items-center'>
                <p>Есть вопросы? <span className='font-bold'>Мы онлайн</span></p>
                <img src="/1.svg" alt="" />
-            </div>
+            </a>
             <p className='transition-colors ease-in-out duration-200 py-3 hover:bg-slate-200 w-full text-center font-bold text-2xl leading-6'>+7 (495) 639-15-63</p>
             <div className='transition-colors ease-in-out duration-200 py-3 hover:bg-slate-200 w-full text-center'>г. Москва, ул. Милашенкова, д.10</div>
             <a className='transition-colors ease-in-out duration-200 py-3 hover:bg-slate-200 w-full text-center underline'>urist.mos.help@yandex.ru</a>

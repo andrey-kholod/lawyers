@@ -12,17 +12,17 @@ const Hero = () => {
                   <img className='img-responsive' src="/hero.jpg" alt="Study" />
                   <p className='py-5 lg:py-9 text-xl font-semibold'>Ответьте на <span className='text-xl font-semibold text-green-700'>6 вопросов</span> в квизе и мы подготовим:</p>
                   <ul className='ul-list'>
-                     <li className='flex gap-5 w-96'>
+                     <li className='flex gap-5 max-w-96'>
                         <span className='text-green-700 font-normal text-5xl'>01</span>
                         <p className='text-sm inline-block lg:text-base'>Юридическое заключение,
                            включающее в себя анализ и оценку ситуации по Арбитражному делу</p>
                      </li>
-                     <li className='flex gap-5 w-96'>
+                     <li className='flex gap-5 max-w-96'>
                         <span className='text-green-700 font-normal text-5xl'>02</span>
                         <p className='text-sm inline-block lg:text-base'>Стратегию решения и возможные исходы дела,
                            включающие в себя услуги медиатора или адвоката, учитывая ваши потребности</p>
                      </li>
-                     <li className='flex gap-5 w-96'>
+                     <li className='flex gap-5 max-w-96'>
                         <span className='text-green-700 font-normal text-5xl'>03</span>
                         <p className='text-sm inline-block lg:text-base'>Проведем расчёт стоимости наших услуг и основных расходов по делу</p>
                      </li>

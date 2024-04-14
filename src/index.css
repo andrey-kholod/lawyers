@@ -11,6 +11,9 @@
    font-size: 1rem;
 }
 
+html {
+   scroll-behavior: smooth;
+}
 
 @layer components {
    .transition-link {
@@ -152,10 +155,8 @@
    box-sizing: border-box;
    display: flex;
    flex-direction: column;
-   /* align-items: center; */
    width: 40%;
    background: #fff;
-   /* text-align: center; */
 }
 
 /* FORM */
@@ -366,5 +367,15 @@
    .map {
       width: 80%;
       height: 80%;
+   }
+}
+
+@media screen and (max-width: 450px) {
+   .form {
+      width: 300px;
+   }
+
+   .form-input {
+      width: 300px;
    }
 }
